@@ -42,6 +42,9 @@ Cross-company data sharing has the following limitations:
   Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically affect performance.
 * You can't use it with [dual-write](../data-entities/dual-write/dual-write-home-page.md).
 
+> [!IMPORTANT]
+> Cross-company data sharing is not supported with [dual-write](../data-entities/dual-write/dual-write-home-page.md). This limitation is by design, as the two features are based on different underlying technologies.
+
 ### Policies
 
 You manage data sharing by defining policies and saving them in data packages. You can find templates that Microsoft has tested and supports as downloadable data packages on Microsoft Dynamics 365 Lifecycle Services. By using policies, you can control the following aspects of data sharing:
